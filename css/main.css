@@ -9,35 +9,35 @@ html {
 }
 
 @font-face {
-  font-family: 'ProximaNova-Light';
+  font-family: "ProximaNova-Light";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url("../fonts/ProximaNova-Light.woff") format("woff");
 }
 @font-face {
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../fonts/ProximaNova-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'ProximaNova-Semibold';
+  font-family: "ProximaNova-Semibold";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
   src: url("../fonts/ProximaNova-Semibold.woff") format("woff");
 }
 @font-face {
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/ProximaNova-Bold.woff") format("woff");
 }
 body {
-  font-family: 'ProximaNova-Light', serif;
+  font-family: "ProximaNova-Light", serif;
   color: #fff;
   font-size: 16px;
   line-height: 23px;
@@ -79,7 +79,7 @@ a {
 }
 
 .sections-subtitle {
-  font-family: 'El Messiri', serif;
+  font-family: "El Messiri", serif;
   font-style: normal;
   font-size: 24px;
   line-height: 34px;
@@ -89,7 +89,7 @@ a {
   position: relative;
   padding-left: 72px;
   padding-right: 72px;
-  font-family: 'El Messiri', serif;
+  font-family: "El Messiri", serif;
   font-size: 42px;
   line-height: 59px;
 }
@@ -124,7 +124,7 @@ a {
   display: flex;
   font-size: 14px;
   line-height: 19px;
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
 }
 
 .menu__item-link {
@@ -153,7 +153,7 @@ a {
   border-radius: 10px;
   height: 600px;
   text-align: center;
-  font-family: 'El Messiri';
+  font-family: "El Messiri";
   font-weight: 700;
 }
 
@@ -194,6 +194,25 @@ a {
   font-size: 64px;
   line-height: 90px;
   margin: 0;
+}
+
+.sessions {
+  /*...*/
+}
+.sessions__title {
+  /*...*/
+}
+.sessions__inner {
+  /*...*/
+}
+.sessions__grid-item {
+  /*...*/
+}
+.sessions__grid-item.item1 {
+  /*...*/
+}
+.sessions__grid {
+  /*...*/
 }
 
 .sessions__title {
@@ -268,34 +287,28 @@ a {
 }
 
 .reviews__item {
-  background-color: #018ABE;
-  border-radius: 10px;
-  padding: 40px 45px;
-  font-size: 10px;
-  line-height: 14px;
-  max-width: 500px;
-  height: 276px;
+  max-width: 636px;
+  height: 350px;
   margin-bottom: 60px;
   margin-top: 40px;
   text-align: left;
+  transition: all 0.25s;
 }
 .reviews__item + .reviews__item {
-  margin-left: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-
-.reviews__item-text {
-  max-width: 410px;
-}
-
-.slick-current {
-  max-width: 636px;
-  height: 350px;
+.reviews__item-wrap {
+  transform: scale(0.8);
+  background-color: #018ABE;
+  border-radius: 10px;
+  padding: 40px 45px;
   font-size: 14px;
   line-height: 20px;
-  transform: translateY(-37px);
+  transition: all 0.25s;
 }
-.slick-current .reviews__item-text {
-  max-width: 516px;
+.reviews__item.slick-current .reviews__item-wrap {
+  transform: scale(1);
 }
 
 .slick-dots {
@@ -379,7 +392,7 @@ a {
 }
 
 .price__list {
-  font-family: 'ProximaNova-Regular';
+  font-family: "ProximaNova-Regular";
 }
 
 .price__descr {
@@ -480,7 +493,7 @@ iframe {
   padding: 9px 15px;
   background-color: #fff;
   color: #018ABE;
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -498,9 +511,11 @@ iframe {
 }
 
 .copyright {
-  font-family: 'ProximaNova-Regular', serif;
+  font-family: "ProximaNova-Regular", serif;
 }
 
 .bottom-link {
-  font-family: 'ProximaNova-Bold', serif;
+  font-family: "ProximaNova-Bold", serif;
 }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.reiews__gallery').slick({
+    $('.reviews__gallery').slick({
         centerMode: true,
         variableWidth: true,
         centerPadding: '0',
