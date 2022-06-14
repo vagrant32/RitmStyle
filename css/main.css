@@ -140,7 +140,7 @@ a {
   background-color: #018ABE;
   border: 1px solid #018ABE;
   border-radius: 3px;
-  font-family: "ProximaNova-Semibold";
+  font-family: 'ProximaNova-Semibold';
   font-style: 13px;
   line-height: 18px;
 }
@@ -268,34 +268,28 @@ a {
 }
 
 .reviews__item {
-  background-color: #018ABE;
-  border-radius: 10px;
-  padding: 40px 45px;
-  font-size: 10px;
-  line-height: 14px;
-  max-width: 500px;
-  height: 276px;
+  max-width: 636px;
+  height: 350px;
   margin-bottom: 60px;
   margin-top: 40px;
   text-align: left;
+  transition: all 0.25s;
 }
 .reviews__item + .reviews__item {
-  margin-left: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-
-.reviews__item-text {
-  max-width: 410px;
-}
-
-.slick-current {
-  max-width: 636px;
-  height: 350px;
+.reviews__item-wrap {
+  transform: scale(0.8);
+  background-color: #018ABE;
+  border-radius: 10px;
+  padding: 40px 45px;
   font-size: 14px;
   line-height: 20px;
-  transform: translateY(-37px);
+  transition: all 0.25s;
 }
-.slick-current .reviews__item-text {
-  max-width: 516px;
+.reviews__item.slick-current .reviews__item-wrap {
+  transform: scale(1);
 }
 
 .slick-dots {
