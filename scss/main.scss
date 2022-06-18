@@ -283,6 +283,7 @@ a {
 // REVIEWS SECTION
 .reviews__inner {
     max-width: 1736px;
+    max-height: 585px;
     margin: 0 auto;
 }
 
@@ -291,39 +292,42 @@ a {
     margin-bottom: 100px;
 }
 
-.reiews__gallery {
-    max-height: 585px;
-    // width: 100%;
-}
+// .reiews__gallery {
+//     // width: 100%;
+// }
 
 .reviews__item {
     max-width: 636px;
     height: 350px;
     margin-bottom: 60px;
-    margin-top: 40px;
     text-align: left;
     transition: all 0.25s;
 
     $slide: &;
 
-    & + .reviews__item {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
+    // & + .reviews__item {
+    //     margin-left: 25px;
+    //     margin-right: 25px;
+    // }
+    
 
     &-wrap {
-        transform: scale(0.8);
+        height: 100%;
+        transform: scale(0.72, 0.75);
         background-color: #018ABE;
         border-radius: 10px;
-        padding: 40px 45px;
+        padding: 40px 45px 55px;
         font-size: 14px;
         line-height: 20px;
         transition: all 0.25s;
     }
-
+    // &.slick-current .reviews__item-wrap{
+    //     transform: scale(1);
+    // }
     &.slick-current {
         #{$slide}-wrap {
             transform: scale(1);
+            padding: 50px 60px 55px;
         }
     }
 }
@@ -575,3 +579,51 @@ iframe {
 // }
 
 
+//BLOG PAGE ================================
+%blog-button {
+    display: inline-block;
+    font-family: 'ProximaNova-Bold';
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: #018ABE;
+}
+.blog{
+
+    &__inner {
+        &-title{
+        text-align: center;
+        margin-bottom: 60px;
+        }
+    }
+    &__item {
+        &+ .blog__item {
+            margin-top: 45px;
+        }
+        display: flex;
+        padding: 50px 60px;
+        gap: 50px;
+        border: 2px solid #018ABE;
+        border-radius: 20px;
+    }
+    &__content {
+        .date {
+            width: 96px;
+            height: 30px;
+            @extend %blog-button;
+            padding: 5px 12px;
+        }
+        &-title {
+
+        }
+        &-text {
+
+        }
+        &-link {
+            @extend %blog-button;
+            padding: 10px 20px;
+            width: 134px;
+            height: 39px;
+        }
+    }
+}    
