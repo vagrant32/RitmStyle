@@ -493,7 +493,7 @@ iframe {
   font-family: 'ProximaNova-Bold', serif;
 }
 
-.blog__content .date, .blog__content-link {
+.blog__content .date, .blog__content-link, .news__grid-item .date {
   display: inline-block;
   font-family: 'ProximaNova-Bold';
   border-radius: 5px;
@@ -502,6 +502,29 @@ iframe {
   background-color: #018ABE;
 }
 
+.blog {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  position: relative;
+}
+.blog__inner::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  height: 1px;
+  width: 1298px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+}
+.blog__inner::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  height: 1px;
+  width: 1298px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+}
 .blog__inner-title {
   text-align: center;
   margin-bottom: 60px;
@@ -519,10 +542,76 @@ iframe {
 .blog__content .date {
   width: 96px;
   height: 30px;
+  margin-bottom: 30px;
   padding: 5px 12px;
+}
+.blog__content-title {
+  margin-bottom: 20px;
+  font-family: "El Messiri";
+  font-size: 24px;
+  line-height: 34px;
+}
+.blog__content-text {
+  margin-bottom: 40px;
 }
 .blog__content-link {
   padding: 10px 20px;
   width: 134px;
   height: 39px;
+}
+
+.news {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.news__inner::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  height: 1px;
+  width: 1298px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+}
+.news__inner::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  height: 1px;
+  width: 1298px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+}
+.news__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.news__grid {
+  display: grid;
+  grid-template: repeat(2, 258px)/repeat(3, 416px);
+  gap: 24px;
+}
+.news__grid-item {
+  border-radius: 10px;
+  position: relative;
+  background-image: url("../images/sessions-3.jpg");
+}
+.news__grid-item .date {
+  width: 96px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  padding: 5px 12px;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+.news__grid-item .news__subtitle {
+  position: absolute;
+  bottom: 0;
+  margin-left: 35px;
+  margin-bottom: 30px;
+  font-family: serif, 'El Messiri';
+  font-size: 21px;
+  line-height: 29px;
 }

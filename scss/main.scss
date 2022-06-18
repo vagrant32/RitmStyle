@@ -579,7 +579,7 @@ iframe {
 // }
 
 
-//BLOG PAGE ================================
+//BLOG PAGE ================================================
 %blog-button {
     display: inline-block;
     font-family: 'ProximaNova-Bold';
@@ -589,8 +589,34 @@ iframe {
     background-color: #018ABE;
 }
 .blog{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    position: relative;
 
     &__inner {
+        // border-top: 1px solid #fff;
+        // padding-top: 60px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            height: 1px;
+            width: 1298px;
+            border: 1px solid #fff;
+            opacity: 0.5;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -120px;
+            height: 1px;
+            width: 1298px;
+            border: 1px solid #fff;
+            opacity: 0.5;
+        }
+        // &:last-child {
+        //     margin-bottom: 120px;
+        // }
         &-title{
         text-align: center;
         margin-bottom: 60px;
@@ -610,14 +636,18 @@ iframe {
         .date {
             width: 96px;
             height: 30px;
+            margin-bottom: 30px;
             @extend %blog-button;
             padding: 5px 12px;
         }
         &-title {
-
+            margin-bottom: 20px;
+            font-family: "El Messiri";
+            font-size: 24px;
+            line-height: 34px;
         }
         &-text {
-
+            margin-bottom: 40px;
         }
         &-link {
             @extend %blog-button;
@@ -627,3 +657,65 @@ iframe {
         }
     }
 }    
+
+//NEWS PAGE ================================================
+.news {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    &__inner {
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            height: 1px;
+            width: 1298px;
+            border: 1px solid #fff;
+            opacity: 0.5;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -120px;
+            height: 1px;
+            width: 1298px;
+            border: 1px solid #fff;
+            opacity: 0.5;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__grid {
+        display: grid;
+        grid-template: repeat(2, 258px) / repeat(3, 416px);
+        gap: 24px;
+        &-item {
+            border-radius: 10px;
+            position: relative;
+            background-image: url('../images/sessions-3.jpg');
+            .date {
+                width: 96px;
+                height: 30px;
+                position: absolute;
+                top: 0;
+                @extend %blog-button;
+                padding: 5px 12px;
+                margin-left: 35px;
+                margin-top: 30px;
+                
+            }
+            .news__subtitle {
+                position: absolute;
+                bottom: 0;
+                margin-left: 35px;
+                margin-bottom: 30px;
+                font-family: serif, 'El Messiri';
+                font-size: 21px;
+                line-height: 29px;
+            }
+        }
+    }
+}
