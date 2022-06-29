@@ -112,6 +112,16 @@ a {
   background-image: url("../images/box-title-right.svg");
 }
 
+.brd-tp {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 30px;
+}
+
+.brd-btm {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 30px;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -211,7 +221,7 @@ a {
 
 .sessions__grid {
   display: grid;
-  grid-template: repeat(2, 258px)/repeat(3, 416px);
+  grid-template: repeat(2, minmax(129px, 258px))/repeat(3, minmax(207px, 416px));
   gap: 24px;
 }
 
@@ -307,6 +317,8 @@ a {
   border-radius: 3px;
   opacity: 0.4;
   cursor: pointer;
+  border: none;
+  border-radius: 3px;
 }
 
 .reviews__item-text {
@@ -314,8 +326,9 @@ a {
 }
 
 .wrapper {
-  max-width: 1078px;
+  max-width: 1098px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .about__title {
@@ -330,6 +343,11 @@ a {
 
 .about__inner + .about__inner {
   margin-top: 100px;
+}
+
+.about__massage-img,
+.about__hydro-img {
+  max-height: 365px;
 }
 
 .about__massage-title {
@@ -493,7 +511,7 @@ iframe {
   font-family: 'ProximaNova-Bold', serif;
 }
 
-.blog__content .date, .blog__content-link, .news__grid-item .date {
+.blog__content .date, .blog__content-link, .news__grid-item .date, .new_format__content .date {
   display: inline-block;
   font-family: 'ProximaNova-Bold';
   border-radius: 5px;
@@ -503,27 +521,8 @@ iframe {
 }
 
 .blog {
-  margin-top: 100px;
-  margin-bottom: 150px;
-  position: relative;
-}
-.blog__inner::before {
-  content: "";
-  position: absolute;
-  top: -70px;
-  height: 1px;
-  width: 1298px;
-  border: 1px solid #fff;
-  opacity: 0.5;
-}
-.blog__inner::after {
-  content: "";
-  position: absolute;
-  bottom: -120px;
-  height: 1px;
-  width: 1298px;
-  border: 1px solid #fff;
-  opacity: 0.5;
+  margin-top: 60px;
+  margin-bottom: 120px;
 }
 .blog__inner-title {
   text-align: center;
@@ -551,7 +550,7 @@ iframe {
   font-size: 24px;
   line-height: 34px;
 }
-.blog__content-text {
+.blog__content-text, .new_format__content-text {
   margin-bottom: 40px;
 }
 .blog__content-link {
@@ -561,27 +560,8 @@ iframe {
 }
 
 .news {
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 150px;
-}
-.news__inner::before {
-  content: "";
-  position: absolute;
-  top: -70px;
-  height: 1px;
-  width: 1298px;
-  border: 1px solid #fff;
-  opacity: 0.5;
-}
-.news__inner::after {
-  content: "";
-  position: absolute;
-  bottom: -120px;
-  height: 1px;
-  width: 1298px;
-  border: 1px solid #fff;
-  opacity: 0.5;
+  margin-top: 60px;
+  margin-bottom: 120px;
 }
 .news__title {
   text-align: center;
@@ -614,4 +594,34 @@ iframe {
   font-family: serif, 'El Messiri';
   font-size: 21px;
   line-height: 29px;
+}
+
+.new_format {
+  margin-bottom: 160px;
+}
+.new_format-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.new_format__inner {
+  display: flex;
+  gap: 134px;
+}
+.new_format__content {
+  max-width: 526px;
+}
+.new_format__content .date {
+  width: 96px;
+  height: 30px;
+  padding: 5px 12px;
+  margin-bottom: 45px;
+}
+.new_format__content-title {
+  margin-bottom: 30px;
+}
+.new_format-img {
+  width: 636px;
+  height: 394px;
+  margin-top: auto;
+  margin-bottom: auto;
 }

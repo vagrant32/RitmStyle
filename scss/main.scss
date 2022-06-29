@@ -117,8 +117,15 @@ a {
         background-image: url("../images/box-title-right.svg");
     }
 }
-
-
+.brd-tp {
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+    padding-top: 30px;
+}
+.brd-btm {
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+    padding-bottom: 30px;
+}
+//HEADER SECTION =======================================
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -237,7 +244,7 @@ a {
 
 .sessions__grid {
     display: grid;
-    grid-template: repeat(2, 258px) / repeat(3, 416px);
+    grid-template: repeat(2, minmax(129px, 258px)) / repeat(3, minmax(207px, 416px));
     gap: 24px;
 
 }
@@ -367,6 +374,8 @@ a {
         border-radius: 3px;
         opacity: 0.4;
         cursor: pointer;
+        border: none;
+        border-radius: 3px;
     }
 }
 
@@ -376,8 +385,9 @@ a {
 
 // REVIEWS SECTION
 .wrapper {
-    max-width: 1078px;
+    max-width: 1098px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .about__title {
@@ -392,6 +402,10 @@ a {
 
 .about__inner + .about__inner {
     margin-top: 100px;
+}
+.about__massage-img,
+.about__hydro-img {
+    max-height: 365px;
 }
 
 .about__massage-title {
@@ -589,34 +603,10 @@ iframe {
     background-color: #018ABE;
 }
 .blog{
-    margin-top: 100px;
-    margin-bottom: 150px;
-    position: relative;
+    margin-top: 60px;
+    margin-bottom: 120px;
 
     &__inner {
-        // border-top: 1px solid #fff;
-        // padding-top: 60px;
-        &::before {
-            content: "";
-            position: absolute;
-            top: -70px;
-            height: 1px;
-            width: 1298px;
-            border: 1px solid #fff;
-            opacity: 0.5;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -120px;
-            height: 1px;
-            width: 1298px;
-            border: 1px solid #fff;
-            opacity: 0.5;
-        }
-        // &:last-child {
-        //     margin-bottom: 120px;
-        // }
         &-title{
         text-align: center;
         margin-bottom: 60px;
@@ -660,29 +650,10 @@ iframe {
 
 //NEWS PAGE ================================================
 .news {
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-top: 60px;
+    margin-bottom: 120px;
     &__inner {
         
-        &::before {
-            content: "";
-            position: absolute;
-            top: -70px;
-            height: 1px;
-            width: 1298px;
-            border: 1px solid #fff;
-            opacity: 0.5;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -120px;
-            height: 1px;
-            width: 1298px;
-            border: 1px solid #fff;
-            opacity: 0.5;
-        }
     }
     &__title {
         text-align: center;
@@ -717,5 +688,41 @@ iframe {
                 line-height: 29px;
             }
         }
+    }
+}
+
+//NEW_FORMAT PAGE ================================================
+.new_format {
+    margin-bottom: 160px;
+    &-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__inner {
+        display: flex;
+        gap: 134px;
+    }
+    &__content {
+        max-width: 526px;
+        .date {
+            @extend %blog-button;
+            width: 96px;
+            height: 30px;
+            padding: 5px 12px;
+            margin-bottom: 45px;
+
+        }
+        &-title {
+            margin-bottom: 30px;
+        }
+        &-text {
+            @extend .blog__content-text;
+        }
+    }
+    &-img {
+        width: 636px;
+        height: 394px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
