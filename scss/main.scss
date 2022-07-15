@@ -155,7 +155,7 @@ a {
     border: 1px solid #018ABE;
     border-radius: 3px;
     font-family: 'ProximaNova-Semibold';
-    font-style: 13px;
+    font-size: 13px; 
     line-height: 18px;
 }
 
@@ -245,6 +245,8 @@ a {
 .sessions__grid {
     display: grid;
     grid-template: repeat(2, minmax(129px, 258px)) / repeat(3, minmax(207px, 416px));
+ 
+
     gap: 24px;
 
 }
@@ -287,7 +289,7 @@ a {
     background-position: center;
 }
 
-// REVIEWS SECTION
+// REVIEWS SECTION===============================================================
 .reviews__inner {
     max-width: 1736px;
     max-height: 585px;
@@ -383,7 +385,7 @@ a {
     padding-top: 20px;
 }
 
-// REVIEWS SECTION
+// ABOUT SECTION==================================================================
 .wrapper {
     max-width: 1098px;
     margin: 0 auto;
@@ -403,9 +405,15 @@ a {
 .about__inner + .about__inner {
     margin-top: 100px;
 }
-.about__massage-img,
-.about__hydro-img {
+.about__massage-img{
     max-height: 365px;
+    max-width: 526px;
+    // padding: 0 10px;
+}
+.about__hydro-img {
+    max-height: 400px;
+    max-width: 526px;
+    // padding: 0 10px;
 }
 
 .about__massage-title {
@@ -423,7 +431,7 @@ a {
     margin-bottom: 30px;
 }
 
-// PRICE SECTION
+// PRICE SECTION======================================================
 .price__title {
     text-align: center;
     margin-bottom: 100px;
@@ -479,7 +487,7 @@ a {
     margin-top: 30px;
 }
 
-// MAP SECTION
+// MAP SECTION ====================================================
 .map {
     margin-bottom: 100px;
 }
@@ -652,9 +660,6 @@ iframe {
 .news {
     margin-top: 60px;
     margin-bottom: 120px;
-    &__inner {
-        
-    }
     &__title {
         text-align: center;
         margin-bottom: 80px;
@@ -724,5 +729,170 @@ iframe {
         height: 394px;
         margin-top: auto;
         margin-bottom: auto;
+    }
+}
+
+//ADAPTIVE =================================================================
+@media(max-width: 1024px){
+    .price {
+        &__inner {
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+        &__title {
+            margin-bottom: 0;
+        }
+        &__text {
+            margin-top: 50px;
+        }
+    }
+}
+@media(max-width: 960px){
+    .menu__item + .menu__item {
+        margin-left: 20px;
+    }
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__massage-img {
+        width: 100%;
+        height: auto;
+    }
+    .about__hydro-img {
+        width: 100%;
+        height: auto;
+        order: 4;
+    }
+    .about__title {
+        margin-bottom: 50px;
+    }
+    .about__massage-title {
+        margin-top: 0;
+    }
+    .price {
+        margin-bottom: 50px;
+    }
+    .map__wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+}
+
+@media(max-width: 740px){
+    .header__inner {
+        display: block;
+        .menu {
+            margin-bottom: 20px;
+            &__list {
+                justify-content: space-between;
+            }
+        }
+    }
+    .header__img {
+        display: none;
+    }
+    .header__link {
+        display: block;
+        text-align: center;
+    }
+    .therapy__inner {
+        background-position: center center;
+    }
+    .spacing {
+        margin-bottom: 50px;
+    }
+    .sessions__title {
+        margin-bottom: 50px;
+    }
+    .sessions__grid {
+        display: grid;
+        grid-template: repeat(3, minmax(129px, 228px)) / repeat(2, minmax(167px, 416px));
+        gap: 15px;
+    }
+    .box-titles {
+        padding-left: 42px;
+        padding-right: 42px;
+        font-size: 32px;
+        line-height: 49px;
+    }
+    .reviews__title {
+        margin-bottom: 0;
+    }
+    .reviews__item {
+        margin-bottom: 0;
+        
+    }
+    .reviews__item.slick-current .reviews__item-wrap {
+        transform: scale(0.75);
+    }
+    .about__inner {
+        gap: 50px;
+    }
+    .price__image-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media(max-width: 490px){
+    .menu__list {
+        flex-wrap: wrap;
+    }
+    .menu__item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .menu__item + .menu__item {
+        margin-left: 0;
+    }
+    .therapy__subtitle span {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .therapy__title {
+        font-size: 44px;
+        line-height: 70px;
+    }
+    .sessions__grid {
+        display: grid;
+        grid-template: repeat(6, minmax(129px, 228px)) / minmax(167px, 416px);
+        gap: 10px;
+        justify-content: center;
+        
+    }
+    .reviews__item {
+        max-width: 375px;
+        height: 100%;
+        &-wrap {
+            padding: 0;
+        }
+    }
+    .reviews__item.slick-current .reviews__item-wrap {
+        transform: scale(0.9);
+        padding: 10px;
+    }
+    .about__inner + .about__inner {
+        margin-top: 30px;
+    }
+    .about__title {
+        margin-bottom: 30px;
+    }
+    .about__inner {
+        gap: 30px;
+    }
+    .price__title .box-titles{
+    font-size: 29px;
+    line-height: 49px;
+    }
+    
+    .map__adress-first, .map__adress-second {
+    width: 100%;
+    }
+    .map {
+        margin-bottom: 50px;
     }
 }

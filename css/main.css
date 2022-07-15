@@ -1,89 +1,74 @@
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 @font-face {
   font-family: 'ProximaNova-Light';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Light.woff") format("woff");
-}
+  src: url("../fonts/ProximaNova-Light.woff") format("woff"); }
 @font-face {
   font-family: 'ProximaNova-Regular';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
-}
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"); }
 @font-face {
   font-family: 'ProximaNova-Semibold';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Semibold.woff") format("woff");
-}
+  src: url("../fonts/ProximaNova-Semibold.woff") format("woff"); }
 @font-face {
   font-family: 'ProximaNova-Bold';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
-}
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff"); }
 body {
   font-family: 'ProximaNova-Light', serif;
   color: #fff;
   font-size: 16px;
   line-height: 23px;
-  background-color: #162831;
-}
+  background-color: #162831; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 p {
-  margin: 0;
-}
+  margin: 0; }
 
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
-}
+  list-style: none; }
 
 li {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 .container {
   max-width: 1316px;
   margin: 0 auto;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 
 .spacing {
-  margin-bottom: 150px;
-}
+  margin-bottom: 150px; }
 
 .sections-subtitle {
   font-family: 'El Messiri', serif;
   font-style: normal;
   font-size: 24px;
-  line-height: 34px;
-}
+  line-height: 34px; }
 
 .box-titles {
   position: relative;
@@ -91,59 +76,50 @@ a {
   padding-right: 72px;
   font-family: 'El Messiri', serif;
   font-size: 42px;
-  line-height: 59px;
-}
-.box-titles::before {
-  content: "";
-  width: 28px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: 19px;
-  background-image: url("../images/box-title-left.svg");
-}
-.box-titles::after {
-  content: "";
-  width: 28px;
-  height: 14px;
-  position: absolute;
-  right: 0;
-  top: 19px;
-  background-image: url("../images/box-title-right.svg");
-}
+  line-height: 59px; }
+  .box-titles::before {
+    content: "";
+    width: 28px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 19px;
+    background-image: url("../images/box-title-left.svg"); }
+  .box-titles::after {
+    content: "";
+    width: 28px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: 19px;
+    background-image: url("../images/box-title-right.svg"); }
 
 .brd-tp {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
-  padding-top: 30px;
-}
+  padding-top: 30px; }
 
 .brd-btm {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 30px;
-}
+  padding-bottom: 30px; }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 .menu__list {
   display: flex;
   font-size: 14px;
   line-height: 19px;
-  font-family: 'ProximaNova-Regular';
-}
+  font-family: 'ProximaNova-Regular'; }
 
 .menu__item-link {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .menu__item + .menu__item {
-  margin-left: 50px;
-}
+  margin-left: 50px; }
 
 .header__link {
   padding: 9px 15px;
@@ -151,9 +127,8 @@ a {
   border: 1px solid #018ABE;
   border-radius: 3px;
   font-family: 'ProximaNova-Semibold';
-  font-style: 13px;
-  line-height: 18px;
-}
+  font-size: 13px;
+  line-height: 18px; }
 
 .therapy__inner {
   background-image: url(../images/therapy-img.jpg);
@@ -164,8 +139,7 @@ a {
   height: 600px;
   text-align: center;
   font-family: 'El Messiri';
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .therapy__subtitle {
   font-style: normal;
@@ -173,207 +147,175 @@ a {
   line-height: 34px;
   padding-top: 136px;
   padding-bottom: 40px;
-  margin: 0;
-}
-.therapy__subtitle span {
-  position: relative;
-  padding-left: 90px;
-  padding-right: 90px;
-}
-.therapy__subtitle span::before {
-  content: "";
-  width: 28px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: 10px;
-  background-image: url("../images/therapy-subtitle-left.svg");
-}
-.therapy__subtitle span::after {
-  content: "";
-  width: 28px;
-  height: 14px;
-  position: absolute;
-  right: 0;
-  top: 10px;
-  background-image: url("../images/therapy-subtitle-right.svg");
-}
+  margin: 0; }
+  .therapy__subtitle span {
+    position: relative;
+    padding-left: 90px;
+    padding-right: 90px; }
+    .therapy__subtitle span::before {
+      content: "";
+      width: 28px;
+      height: 14px;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      background-image: url("../images/therapy-subtitle-left.svg"); }
+    .therapy__subtitle span::after {
+      content: "";
+      width: 28px;
+      height: 14px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      background-image: url("../images/therapy-subtitle-right.svg"); }
 
 .therapy__title {
   font-style: normal;
   font-size: 64px;
   line-height: 90px;
-  margin: 0;
-}
+  margin: 0; }
 
 .sessions__title {
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .sessions__inner {
-  text-align: center;
-}
+  text-align: center; }
 
 .sessions__grid-item {
   border-radius: 10px;
-  position: relative;
-}
+  position: relative; }
 
 .sessions__grid {
   display: grid;
   grid-template: repeat(2, minmax(129px, 258px))/repeat(3, minmax(207px, 416px));
-  gap: 24px;
-}
+  gap: 24px; }
 
 .sessions__subtitle {
   position: absolute;
   bottom: 30px;
   left: 40px;
-  text-align: left;
-}
+  text-align: left; }
 
 .item1 {
   grid-row: span 2;
   background-image: url("../images/sessions-1.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .item2 {
   background-image: url("../images/sessions-2.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .item3 {
   background-image: url("../images/sessions-3.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .item4 {
   background-image: url("../images/sessions-4.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .item5 {
   background-image: url("../images/sessions-5.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
 
 .reviews__inner {
   max-width: 1736px;
   max-height: 585px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .reviews__title {
   text-align: center;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .reviews__item {
   max-width: 636px;
   height: 350px;
   margin-bottom: 60px;
   text-align: left;
-  transition: all 0.25s;
-}
-.reviews__item-wrap {
-  height: 100%;
-  transform: scale(0.72, 0.75);
-  background-color: #018ABE;
-  border-radius: 10px;
-  padding: 40px 45px 55px;
-  font-size: 14px;
-  line-height: 20px;
-  transition: all 0.25s;
-}
-.reviews__item.slick-current .reviews__item-wrap {
-  transform: scale(1);
-  padding: 50px 60px 55px;
-}
+  transition: all 0.25s; }
+  .reviews__item-wrap {
+    height: 100%;
+    transform: scale(0.72, 0.75);
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 40px 45px 55px;
+    font-size: 14px;
+    line-height: 20px;
+    transition: all 0.25s; }
+  .reviews__item.slick-current .reviews__item-wrap {
+    transform: scale(1);
+    padding: 50px 60px 55px; }
 
 .slick-dots {
   position: absolute;
-  left: calc(50% - 50px);
-}
-.slick-dots li + li {
-  margin-left: 20px;
-}
-.slick-dots li {
-  display: inline-block;
-}
-.slick-dots .slick-active button {
-  opacity: 1;
-}
-.slick-dots button {
-  font-size: 0;
-  width: 16px;
-  height: 16px;
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  opacity: 0.4;
-  cursor: pointer;
-  border: none;
-  border-radius: 3px;
-}
+  left: calc(50% - 50px); }
+  .slick-dots li + li {
+    margin-left: 20px; }
+  .slick-dots li {
+    display: inline-block; }
+  .slick-dots .slick-active button {
+    opacity: 1; }
+  .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    opacity: 0.4;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px; }
 
 .reviews__item-text {
-  padding-top: 20px;
-}
+  padding-top: 20px; }
 
 .wrapper {
   max-width: 1098px;
   margin: 0 auto;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 
 .about__title {
   text-align: center;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .about__inner {
   display: flex;
-  gap: 85px;
-}
+  gap: 85px; }
 
 .about__inner + .about__inner {
-  margin-top: 100px;
-}
+  margin-top: 100px; }
 
-.about__massage-img,
-.about__hydro-img {
+.about__massage-img {
   max-height: 365px;
-}
+  max-width: 526px; }
+
+.about__hydro-img {
+  max-height: 400px;
+  max-width: 526px; }
 
 .about__massage-title {
   margin-top: 70px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .about__massage-text + .about__massage-text,
 .about__hydro-text + .about__hydro-text {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .about__hydro-title {
   margin-top: 15px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .price__title {
   text-align: center;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .price__inner {
   display: flex;
-  gap: 134px;
-}
+  gap: 134px; }
 
 .price__text {
   display: flex;
@@ -381,55 +323,45 @@ a {
   margin-top: 103px;
   width: 416px;
   font-size: 18px;
-  line-height: 25px;
-}
+  line-height: 25px; }
 
 .price__list {
-  font-family: 'ProximaNova-Regular';
-}
+  font-family: 'ProximaNova-Regular'; }
 
 .price__descr {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .price__list-icon {
   position: relative;
-  padding-left: 40px;
-}
-.price__list-icon::before {
-  content: "";
-  height: 9px;
-  width: 18px;
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  background-image: url("../images/price-icon.svg");
-}
+  padding-left: 40px; }
+  .price__list-icon::before {
+    content: "";
+    height: 9px;
+    width: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background-image: url("../images/price-icon.svg"); }
 
 .price__list-item + .price__list-item {
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .price__image-subtitle {
   text-align: center;
   font-size: 21px;
   line-height: 29px;
   font-weight: 700;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .map {
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .map__wrapper {
   display: flex;
-  gap: 48px;
-}
+  gap: 48px; }
 
 iframe {
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .map__adress-first, .map__adress-second {
   width: 392px;
@@ -438,47 +370,38 @@ iframe {
   font-size: 14px;
   line-height: 19px;
   padding: 35px 45px;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .map__adress-first {
-  margin-bottom: 25px;
-}
+  margin-bottom: 25px; }
 
 .map__adress-header {
   margin-bottom: 20px;
   font-family: "El Messiri";
   font-size: 24px;
-  line-height: 34px;
-}
+  line-height: 34px; }
 
 .map__list-item {
   margin-bottom: 20px;
   padding-left: 45px;
-  position: relative;
-}
-.map__list-item::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0px;
-  background-repeat: no-repeat;
-}
-.map__list-item.list-fst::before {
-  background-image: url("../images/map-geo.svg");
-}
-.map__list-item.list-scnd::before {
-  background-image: url("../images/map-metro.svg");
-}
-.map__list-item.list-thrd::before {
-  background-image: url("../images/map-calendar.svg");
-}
+  position: relative; }
+  .map__list-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-repeat: no-repeat; }
+  .map__list-item.list-fst::before {
+    background-image: url("../images/map-geo.svg"); }
+  .map__list-item.list-scnd::before {
+    background-image: url("../images/map-metro.svg"); }
+  .map__list-item.list-thrd::before {
+    background-image: url("../images/map-calendar.svg"); }
 
 .list-thrd {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .map__adress-link {
   width: 155px;
@@ -492,24 +415,20 @@ iframe {
   font-size: 13px;
   line-height: 18px;
   border: none;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 .bottom__inner {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   font-size: 14px;
-  line-height: 19px;
-}
+  line-height: 19px; }
 
 .copyright {
-  font-family: 'ProximaNova-Regular', serif;
-}
+  font-family: 'ProximaNova-Regular', serif; }
 
 .bottom-link {
-  font-family: 'ProximaNova-Bold', serif;
-}
+  font-family: 'ProximaNova-Bold', serif; }
 
 .blog__content .date, .blog__content-link, .news__grid-item .date, .new_format__content .date {
   display: inline-block;
@@ -517,111 +436,231 @@ iframe {
   border-radius: 5px;
   font-size: 14px;
   line-height: 19px;
-  background-color: #018ABE;
-}
+  background-color: #018ABE; }
 
 .blog {
   margin-top: 60px;
-  margin-bottom: 120px;
-}
-.blog__inner-title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.blog__item {
-  display: flex;
-  padding: 50px 60px;
-  gap: 50px;
-  border: 2px solid #018ABE;
-  border-radius: 20px;
-}
-.blog__item + .blog__item {
-  margin-top: 45px;
-}
-.blog__content .date {
-  width: 96px;
-  height: 30px;
-  margin-bottom: 30px;
-  padding: 5px 12px;
-}
-.blog__content-title {
-  margin-bottom: 20px;
-  font-family: "El Messiri";
-  font-size: 24px;
-  line-height: 34px;
-}
-.blog__content-text, .new_format__content-text {
-  margin-bottom: 40px;
-}
-.blog__content-link {
-  padding: 10px 20px;
-  width: 134px;
-  height: 39px;
-}
+  margin-bottom: 120px; }
+  .blog__inner-title {
+    text-align: center;
+    margin-bottom: 60px; }
+  .blog__item {
+    display: flex;
+    padding: 50px 60px;
+    gap: 50px;
+    border: 2px solid #018ABE;
+    border-radius: 20px; }
+    .blog__item + .blog__item {
+      margin-top: 45px; }
+  .blog__content .date {
+    width: 96px;
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 5px 12px; }
+  .blog__content-title {
+    margin-bottom: 20px;
+    font-family: "El Messiri";
+    font-size: 24px;
+    line-height: 34px; }
+  .blog__content-text, .new_format__content-text {
+    margin-bottom: 40px; }
+  .blog__content-link {
+    padding: 10px 20px;
+    width: 134px;
+    height: 39px; }
 
 .news {
   margin-top: 60px;
-  margin-bottom: 120px;
-}
-.news__title {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.news__grid {
-  display: grid;
-  grid-template: repeat(2, 258px)/repeat(3, 416px);
-  gap: 24px;
-}
-.news__grid-item {
-  border-radius: 10px;
-  position: relative;
-  background-image: url("../images/sessions-3.jpg");
-}
-.news__grid-item .date {
-  width: 96px;
-  height: 30px;
-  position: absolute;
-  top: 0;
-  padding: 5px 12px;
-  margin-left: 35px;
-  margin-top: 30px;
-}
-.news__grid-item .news__subtitle {
-  position: absolute;
-  bottom: 0;
-  margin-left: 35px;
-  margin-bottom: 30px;
-  font-family: serif, 'El Messiri';
-  font-size: 21px;
-  line-height: 29px;
-}
+  margin-bottom: 120px; }
+  .news__title {
+    text-align: center;
+    margin-bottom: 80px; }
+  .news__grid {
+    display: grid;
+    grid-template: repeat(2, 258px)/repeat(3, 416px);
+    gap: 24px; }
+    .news__grid-item {
+      border-radius: 10px;
+      position: relative;
+      background-image: url("../images/sessions-3.jpg"); }
+      .news__grid-item .date {
+        width: 96px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        padding: 5px 12px;
+        margin-left: 35px;
+        margin-top: 30px; }
+      .news__grid-item .news__subtitle {
+        position: absolute;
+        bottom: 0;
+        margin-left: 35px;
+        margin-bottom: 30px;
+        font-family: serif, 'El Messiri';
+        font-size: 21px;
+        line-height: 29px; }
 
 .new_format {
-  margin-bottom: 160px;
-}
-.new_format-title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.new_format__inner {
-  display: flex;
-  gap: 134px;
-}
-.new_format__content {
-  max-width: 526px;
-}
-.new_format__content .date {
-  width: 96px;
-  height: 30px;
-  padding: 5px 12px;
-  margin-bottom: 45px;
-}
-.new_format__content-title {
-  margin-bottom: 30px;
-}
-.new_format-img {
-  width: 636px;
-  height: 394px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
+  margin-bottom: 160px; }
+  .new_format-title {
+    text-align: center;
+    margin-bottom: 60px; }
+  .new_format__inner {
+    display: flex;
+    gap: 134px; }
+  .new_format__content {
+    max-width: 526px; }
+    .new_format__content .date {
+      width: 96px;
+      height: 30px;
+      padding: 5px 12px;
+      margin-bottom: 45px; }
+    .new_format__content-title {
+      margin-bottom: 30px; }
+  .new_format-img {
+    width: 636px;
+    height: 394px;
+    margin-top: auto;
+    margin-bottom: auto; }
+
+@media (max-width: 1024px) {
+  .price__inner {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center; }
+  .price__title {
+    margin-bottom: 0; }
+  .price__text {
+    margin-top: 50px; } }
+@media (max-width: 960px) {
+  .menu__item + .menu__item {
+    margin-left: 20px; }
+
+  .about__inner {
+    flex-direction: column;
+    align-items: center; }
+
+  .about__massage-img {
+    width: 100%;
+    height: auto; }
+
+  .about__hydro-img {
+    width: 100%;
+    height: auto;
+    order: 4; }
+
+  .about__title {
+    margin-bottom: 50px; }
+
+  .about__massage-title {
+    margin-top: 0; }
+
+  .price {
+    margin-bottom: 50px; }
+
+  .map__wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center; } }
+@media (max-width: 740px) {
+  .header__inner {
+    display: block; }
+    .header__inner .menu {
+      margin-bottom: 20px; }
+      .header__inner .menu__list {
+        justify-content: space-between; }
+
+  .header__img {
+    display: none; }
+
+  .header__link {
+    display: block;
+    text-align: center; }
+
+  .therapy__inner {
+    background-position: center center; }
+
+  .spacing {
+    margin-bottom: 50px; }
+
+  .sessions__title {
+    margin-bottom: 50px; }
+
+  .sessions__grid {
+    display: grid;
+    grid-template: repeat(3, minmax(129px, 228px))/repeat(2, minmax(167px, 416px));
+    gap: 15px; }
+
+  .box-titles {
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 32px;
+    line-height: 49px; }
+
+  .reviews__title {
+    margin-bottom: 0; }
+
+  .reviews__item {
+    margin-bottom: 0; }
+
+  .reviews__item.slick-current .reviews__item-wrap {
+    transform: scale(0.75); }
+
+  .about__inner {
+    gap: 50px; }
+
+  .price__image-img {
+    width: 100%;
+    height: auto; } }
+@media (max-width: 490px) {
+  .menu__list {
+    flex-wrap: wrap; }
+
+  .menu__item {
+    margin-right: 20px;
+    margin-bottom: 20px; }
+
+  .menu__item + .menu__item {
+    margin-left: 0; }
+
+  .therapy__subtitle span {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .therapy__title {
+    font-size: 44px;
+    line-height: 70px; }
+
+  .sessions__grid {
+    display: grid;
+    grid-template: repeat(6, minmax(129px, 228px))/minmax(167px, 416px);
+    gap: 10px;
+    justify-content: center; }
+
+  .reviews__item {
+    max-width: 375px;
+    height: 100%; }
+    .reviews__item-wrap {
+      padding: 0; }
+
+  .reviews__item.slick-current .reviews__item-wrap {
+    transform: scale(0.9);
+    padding: 10px; }
+
+  .about__inner + .about__inner {
+    margin-top: 30px; }
+
+  .about__title {
+    margin-bottom: 30px; }
+
+  .about__inner {
+    gap: 30px; }
+
+  .price__title .box-titles {
+    font-size: 29px;
+    line-height: 49px; }
+
+  .map__adress-first, .map__adress-second {
+    width: 100%; }
+
+  .map {
+    margin-bottom: 50px; } }
