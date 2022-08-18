@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -7,6 +8,7 @@ html {
 *::before {
     box-sizing: inherit;
 }
+
 @font-face {
     font-family: 'ProximaNova-Light';
     font-style: normal;
@@ -14,6 +16,7 @@ html {
     font-display: swap;
     src: url('../fonts/ProximaNova-Light.woff') format('woff');
 }
+
 @font-face {
     font-family: 'ProximaNova-Regular';
     font-style: normal;
@@ -21,6 +24,7 @@ html {
     font-display: swap;
     src: url('../fonts/ProximaNova-Regular.woff') format('woff');
 }
+
 @font-face {
     font-family: 'ProximaNova-Semibold';
     font-style: normal;
@@ -28,6 +32,7 @@ html {
     font-display: swap;
     src: url('../fonts/ProximaNova-Semibold.woff') format('woff');
 }
+
 @font-face {
     font-family: 'ProximaNova-Bold';
     font-style: normal;
@@ -35,6 +40,7 @@ html {
     font-display: swap;
     src: url('../fonts/ProximaNova-Bold.woff') format('woff');
 }
+
 body {
     font-family: 'ProximaNova-Light', serif;
     color: #fff;
@@ -42,21 +48,26 @@ body {
     line-height: 23px;
     background-color: #162831;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
+
 p {
     margin: 0;
 }
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
 li {
     padding-left: 0;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -67,15 +78,18 @@ a {
     margin: 0 auto;
     padding: 0 10px;
 }
+
 .spacing {
     margin-bottom: 150px;
 }
+
 .sections-subtitle {
     font-family: 'El Messiri', serif;
     font-style: normal;
     font-size: 24px;
     line-height: 34px;
 }
+
 .box-titles {
     position: relative;
     padding-left: 72px;
@@ -83,6 +97,7 @@ a {
     font-family: 'El Messiri', serif;
     font-size: 42px;
     line-height: 59px;
+
     &::before {
         content: "";
         width: 28px;
@@ -92,6 +107,7 @@ a {
         top: 19px;
         background-image: url("../images/box-title-left.svg");
     }
+
     &::after {
         content: "";
         width: 28px;
@@ -102,8 +118,15 @@ a {
         background-image: url("../images/box-title-right.svg");
     }
 }
-
-
+.brd-tp {
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+    padding-top: 30px;
+}
+.brd-btm {
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+    padding-bottom: 30px;
+}
+//HEADER SECTION =======================================
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -118,19 +141,22 @@ a {
     line-height: 19px;
     font-family: 'ProximaNova-Regular';
 }
+
 .menu__item-link {
     cursor: pointer;
 }
+
 .menu__item + .menu__item {
     margin-left: 50px;
 }
+
 .header__link {
     padding: 9px 15px;
     background-color: #018ABE;
     border: 1px solid #018ABE;
     border-radius: 3px;
-    font-family: 'ProximaNova-Semibold' ;
-    font-style: 13px;
+    font-family: 'ProximaNova-Semibold';
+    font-size: 13px; 
     line-height: 18px;
 }
 
@@ -145,6 +171,7 @@ a {
     font-family: 'El Messiri';
     font-weight: 700;
 }
+
 .therapy__subtitle {
     font-style: normal;
     font-size: 24px;
@@ -152,143 +179,176 @@ a {
     padding-top: 136px;
     padding-bottom: 40px;
     margin: 0;
+
     & span {
         position: relative;
         padding-left: 90px;
         padding-right: 90px;
 
-    &::before {
-        content: "";
-        width: 28px;
-        height: 14px;
-        position: absolute;
-        left: 0;
-        top: 10px;
-        background-image: url("../images/therapy-subtitle-left.svg");
-    }
-    &::after {
-        content: "";
-        width: 28px;
-        height: 14px;
-        position: absolute;
-        right: 0;
-        top: 10px;
-        background-image: url("../images/therapy-subtitle-right.svg");
-    }
+        &::before {
+            content: "";
+            width: 28px;
+            height: 14px;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            background-image: url("../images/therapy-subtitle-left.svg");
+        }
+
+        &::after {
+            content: "";
+            width: 28px;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            background-image: url("../images/therapy-subtitle-right.svg");
+        }
     }
 
 }
+
 .therapy__title {
     font-style: normal;
     font-size: 64px;
     line-height: 90px;
     margin: 0;
 }
+
 .sessions__title {
     margin-bottom: 100px;
 }
+
 .sessions__inner {
     text-align: center;
 }
+
 .sessions__grid-item {
     border-radius: 10px;
     position: relative;
-
-
 }
+
 .sessions__grid {
     display: grid;
-    grid-template: repeat(2, 258px) / repeat(3, 416px);
+    grid-template: repeat(2, minmax(129px, 258px)) / repeat(3, minmax(207px, 416px));
+ 
+
     gap: 24px;
-                                                                                                            
+
 }
+
 .sessions__subtitle {
     position: absolute;
     bottom: 30px;
     left: 40px;
     text-align: left;
 }
+
 .item1 {
     grid-row: span 2;
     background-image: url('../images/sessions-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .item2 {
     background-image: url('../images/sessions-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .item3 {
     background-image: url('../images/sessions-3.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .item4 {
     background-image: url('../images/sessions-4.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .item5 {
     background-image: url('../images/sessions-5.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
-// REVIEWS SECTION
+// REVIEWS SECTION===============================================================
 .reviews__inner {
     max-width: 1736px;
+    max-height: 585px;
     margin: 0 auto;
 }
+
 .reviews__title {
     text-align: center;
     margin-bottom: 100px;
 }
-.reiews__gallery{
-    max-height: 585px;
-    // width: 100%;
-}
+
+
 
 .reviews__item {
-    background-color: #018ABE;
-    border-radius: 10px;
-    padding: 40px 45px;
-    font-size: 10px;
-    line-height: 14px;
-    max-width: 500px ;
-    height: 276px;
+    max-width: 636px;
+    height: 350px;
     margin-bottom: 60px;
-    margin-top: 40px;
     text-align: left;
-    & + .reviews__item {
-        margin-left: 50px;
+    transition: all 0.25s;
+
+    $slide: &;
+
+    // & + .reviews__item {
+    //     margin-left: 25px;
+    //     margin-right: 25px;
+    // }
+    
+
+    &-wrap {
+        height: 100%;
+        transform: scale(0.72, 0.75);
+        background-color: #018ABE;
+        border-radius: 10px;
+        padding: 40px 45px 55px;
+        font-size: 14px;
+        line-height: 20px;
+        transition: all 0.25s;
     }
-}
-.reviews__item-text {
-    max-width: 410px;
+    // &.slick-current .reviews__item-wrap{
+    //     transform: scale(1);
+    // }
+    &.slick-current {
+        #{$slide}-wrap {
+            transform: scale(1);
+            padding: 50px 60px 55px;
+        }
+    }
 }
 
-.slick-current {
-    max-width: 636px ;
-    height: 350px;
-    font-size: 14px;
-    line-height: 20px;
-    transform: translateY(-37px);
-    & .reviews__item-text {
-        max-width: 516px;
-    }
-}
-.slick-dots{
+
+
+// .slick-current {
+//     //max-width: 636px;
+//     //height: 350px;
+//     //font-size: 14px;
+//     //line-height: 20px;
+//     //transform: translateY(-37px);
+
+// }
+
+.slick-dots {
     position: absolute;
     left: calc(50% - 50px);
+
     & li + li {
         margin-left: 20px;
     }
+
     & li {
         display: inline-block;
     }
 
-    .slick-active button{
+    .slick-active button {
         opacity: 1;
     }
 
@@ -300,6 +360,8 @@ a {
         border-radius: 3px;
         opacity: 0.4;
         cursor: pointer;
+        border: none;
+        border-radius: 3px;
     }
 }
 
@@ -307,28 +369,44 @@ a {
     padding-top: 20px;
 }
 
-// REVIEWS SECTION
+// ABOUT SECTION==================================================================
 .wrapper {
-    max-width: 1078px;
+    max-width: 1098px;
     margin: 0 auto;
+    padding: 0 10px;
 }
+
 .about__title {
     text-align: center;
     margin-bottom: 100px;
 }
+
 .about__inner {
     display: flex;
     gap: 85px;
 }
+
 .about__inner + .about__inner {
     margin-top: 100px;
 }
+.about__massage-img{
+    max-height: 365px;
+    max-width: 526px;
+    // padding: 0 10px;
+}
+.about__hydro-img {
+    max-height: 400px;
+    max-width: 526px;
+    // padding: 0 10px;
+}
+
 .about__massage-title {
     margin-top: 70px;
     margin-bottom: 30px;
 }
-.about__massage-text + .about__massage-text, 
-.about__hydro-text + .about__hydro-text{
+
+.about__massage-text + .about__massage-text,
+.about__hydro-text + .about__hydro-text {
     margin-top: 20px;
 }
 
@@ -336,15 +414,18 @@ a {
     margin-top: 15px;
     margin-bottom: 30px;
 }
-// PRICE SECTION
+
+// PRICE SECTION======================================================
 .price__title {
     text-align: center;
     margin-bottom: 100px;
 }
+
 .price__inner {
     display: flex;
     gap: 134px;
 }
+
 .price__text {
     display: flex;
     justify-content: space-between;
@@ -352,30 +433,36 @@ a {
     width: 416px;
     font-size: 18px;
     line-height: 25px;
-    
+
 }
+
 .price__list {
     font-family: 'ProximaNova-Regular';
 }
+
 .price__descr {
     font-weight: 700;
 }
-.price__list-icon{
+
+.price__list-icon {
     position: relative;
     padding-left: 40px;
+
     &::before {
-    content: "";
-    height: 9px;
-    width: 18px;
-    position: absolute;
-    left: 0;
-    bottom: 8px;
-    background-image: url("../images/price-icon.svg");
+        content: "";
+        height: 9px;
+        width: 18px;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        background-image: url("../images/price-icon.svg");
+    }
 }
-}
+
 .price__list-item + .price__list-item {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
+
 .price__image-subtitle {
     text-align: center;
     font-size: 21px;
@@ -383,10 +470,12 @@ a {
     font-weight: 700;
     margin-top: 30px;
 }
-// MAP SECTION
+
+// MAP SECTION ====================================================
 .map {
     margin-bottom: 100px;
 }
+
 .map__wrapper {
     display: flex;
     gap: 48px;
@@ -409,16 +498,19 @@ iframe {
 .map__adress-first {
     margin-bottom: 25px;
 }
+
 .map__adress-header {
     margin-bottom: 20px;
     font-family: "El Messiri";
     font-size: 24px;
     line-height: 34px;
 }
+
 .map__list-item {
     margin-bottom: 20px;
     padding-left: 45px;
     position: relative;
+
     &::before {
         content: "";
         width: 20px;
@@ -428,19 +520,24 @@ iframe {
         left: 0px;
         background-repeat: no-repeat;
     }
+
     &.list-fst::before {
         background-image: url("../images/map-geo.svg");
     }
+
     &.list-scnd::before {
         background-image: url("../images/map-metro.svg");
     }
+
     &.list-thrd::before {
         background-image: url("../images/map-calendar.svg");
     }
 }
+
 .list-thrd {
     margin-bottom: 30px;
 }
+
 .map__adress-link {
     width: 155px;
     height: 36px;
@@ -455,17 +552,20 @@ iframe {
     border: none;
     border-radius: 3px;
 }
+
 //Bottom SECTION
-.bottom__inner{
+.bottom__inner {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 19px;
 }
+
 .copyright {
     font-family: 'ProximaNova-Regular', serif;
 }
+
 .bottom-link {
     font-family: 'ProximaNova-Bold', serif;
 }
@@ -481,6 +581,422 @@ iframe {
 
 // .header__list, .content__list {
 //     @include main_red()
-    
+
 // }
 
+
+//BLOG PAGE ================================================
+%blog-button {
+    display: inline-block;
+    font-family: 'ProximaNova-Bold';
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: #018ABE;
+}
+.blog{
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+    &__inner {
+        &-title{
+        text-align: center;
+        margin-bottom: 60px;
+        }
+    }
+    &__item {
+        display: flex;
+        padding: 50px 60px;
+        gap: 50px;
+        border: 2px solid #018ABE;
+        border-radius: 20px;
+        & + .blog__item {
+            margin-top: 45px;
+        }
+        img {
+            max-height: 430px;
+            max-width: 564px;
+        }
+    }
+    &__content {
+        .date {
+            width: 96px;
+            height: 30px;
+            margin-bottom: 30px;
+            @extend %blog-button;
+            padding: 5px 12px;
+        }
+        &-title {
+            margin-bottom: 20px;
+            font-family: "El Messiri";
+            font-size: 24px;
+            line-height: 34px;
+        }
+        &-text {
+            margin-bottom: 40px;
+        }
+        &-link {
+            @extend %blog-button;
+            padding: 10px 20px;
+            width: 134px;
+            height: 39px;
+        }
+    }
+}    
+
+//NEWS PAGE ================================================
+.news {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__grid {
+        display: grid;
+        grid-template: repeat(2, minmax(129px, 258px)) / repeat(3, minmax(167px, 416px) );
+        gap: 24px;
+        &-item {
+            border-radius: 10px;
+            position: relative;
+            background-image: url('../images/sessions-3.jpg');
+            .date {
+                width: 96px;
+                height: 30px;
+                position: absolute;
+                top: 0;
+                @extend %blog-button;
+                padding: 5px 12px;
+                margin-left: 35px;
+                margin-top: 30px;
+                
+            }
+            .news__subtitle {
+                position: absolute;
+                bottom: 0;
+                margin-left: 35px;
+                margin-bottom: 30px;
+                font-family: serif, 'El Messiri';
+                font-size: 21px;
+                line-height: 29px;
+            }
+        }
+    }
+}
+
+//NEW_FORMAT PAGE ================================================
+.new_format {
+    margin-bottom: 160px;
+
+    
+    &-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__inner {
+        display: flex;
+        gap: 134px;
+        
+    }
+    &__content {
+        max-width: 526px;
+        .date {
+            @extend %blog-button;
+            width: 96px;
+            height: 30px;
+            padding: 5px 12px;
+            margin-bottom: 45px;
+
+        }
+        &-title {
+            margin-bottom: 30px;
+        }
+        &-text {
+            @extend .blog__content-text;
+        }
+        &-text:last-of-type {
+            margin-bottom: 0;
+        }
+
+    }
+    &-img {
+            align-self: center;
+            width: 60%;
+            height: auto;
+        }
+}
+
+//ADAPTIVE =================================================================
+@media(max-width: 1200px){
+    .new_format {
+        margin-bottom: 100px;
+        &__inner {
+            gap: 50px;
+        }
+        &-img {
+            align-self: flex-start;  
+        }
+        &__content {
+            min-width: 300px;
+        }
+    }
+    
+}
+@media(max-width: 1024px){
+    .price {
+        &__inner {
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+        &__title {
+            margin-bottom: 0;
+        }
+        &__text {
+            margin-top: 50px;
+        }
+    }
+}
+@media(max-width: 960px){
+    .menu__item + .menu__item {
+        margin-left: 20px;
+    }
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__massage-img {
+        width: 100%;
+        height: auto;
+    }
+    .about__hydro-img {
+        width: 100%;
+        height: auto;
+        order: 4;
+    }
+    .about__title {
+        margin-bottom: 50px;
+    }
+    .about__massage-title {
+        margin-top: 0;
+    }
+    .price {
+        margin-bottom: 50px;
+    }
+    .map__wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    //BLOG PAGE=========================
+    .blog__item{
+        // display: block;
+        flex-direction: column-reverse;
+        &-img {
+            // margin: 0 auto 50px;
+            // display: block;
+            align-self: flex-start;
+        }
+    }
+    //NEW FORMAT PAGE===================
+    .new_format {
+        margin-bottom: 100px;
+        &__inner{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &-img {
+            max-width: 636px;
+            width: 100%;
+            align-self: center;
+        }
+        &-title {
+            margin-bottom: 30px;
+            .box-titles {
+                font-size: 26px;
+                line-height: 29px;
+                padding-left: 30px;
+                padding-right: 30px;
+                &::before{
+                    top: 10px;
+                }
+                &::after{
+                    top: 10px;
+                }
+            }
+        }
+        
+    }
+   
+}
+
+@media(max-width: 740px){
+    .header__inner {
+        display: block;
+        .menu {
+            margin-bottom: 20px;
+            &__list {
+                justify-content: space-between;
+            }
+        }
+    }
+    .header__inner-logo {
+        display: none;
+    }
+    .header__link {
+        display: block;
+        text-align: center;
+    }
+    .therapy__inner {
+        background-position: center center;
+    }
+    .spacing {
+        margin-bottom: 50px;
+    }
+    .sessions__title {
+        margin-bottom: 50px;
+    }
+    .sessions__grid {
+        display: grid;
+        grid-template: repeat(3, minmax(129px, 228px)) / repeat(2, minmax(167px, 416px));
+        gap: 15px;
+    }
+    .box-titles {
+        padding-left: 42px;
+        padding-right: 42px;
+        font-size: 32px;
+        line-height: 49px;
+    }
+    .reviews__title {
+        margin-bottom: 0;
+    }
+    .reviews__item {
+        margin-bottom: 0;
+        
+    }
+    .reviews__item.slick-current .reviews__item-wrap {
+        transform: scale(0.75);
+    }
+    .about__inner {
+        gap: 50px;
+    }
+    .price__image-img {
+        width: 100%;
+        height: auto;
+    }
+    //BLOG PAGE=========================
+    .blog {
+        margin-top: 0;
+        margin-bottom: 50px;
+        &__item {
+            padding: 20px;
+            &-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__inner{
+            &-title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .brd-btm {
+        padding-top: 15px;
+        margin-bottom: 25px;
+    }
+    //NEW_FORMAT PAGE===================
+    .new_format {
+        margin-bottom: 50px;
+
+    }
+    //NEWS PAGE=========================
+    .news {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__grid {
+            display: grid;
+            grid-template: repeat(3, minmax(129px, 258px)) / repeat(2, minmax(167px, 416px) );
+            gap: 24px;
+        }
+    }
+}
+
+
+@media(max-width: 490px){
+    .menu__list {
+        flex-wrap: wrap;
+    }
+    .menu__item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .menu__item + .menu__item {
+        margin-left: 0;
+    }
+    .therapy__subtitle span {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .therapy__title {
+        font-size: 44px;
+        line-height: 70px;
+    }
+    .sessions__grid {
+        display: grid;
+        grid-template: repeat(6, minmax(129px, 228px)) / minmax(167px, 416px);
+        gap: 10px;
+        justify-content: center;
+        
+    }
+    .reviews__item {
+        max-width: 375px;
+        height: 100%;
+        &-wrap {
+            padding: 0;
+        }
+    }
+    .reviews__item.slick-current .reviews__item-wrap {
+        transform: scale(0.9);
+        padding: 10px;
+    }
+    .about__inner + .about__inner {
+        margin-top: 30px;
+    }
+    .about__title {
+        margin-bottom: 30px;
+    }
+    .about__inner {
+        gap: 30px;
+    }
+    .price__title .box-titles{
+    font-size: 29px;
+    line-height: 49px;
+    }
+    
+    .map__adress-first, .map__adress-second {
+    width: 100%;
+    }
+    .map {
+        margin-bottom: 50px;
+    }
+    //NEWS PAGE=========================
+    .news {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &__title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__grid {
+            grid-template: repeat(6, minmax(129px, 258px)) / repeat(1, minmax(167px, 416px) );
+            gap: 15px;
+            justify-content: center;
+            
+        }
+    }
+    
+}
